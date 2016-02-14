@@ -1,0 +1,15 @@
+<div ng-controller = "GalleryCtrl">
+	<h1>photos</h1>	
+	<div class = "container">							
+			<div class="row gallery">
+			<div class="col-md-3" ng-repeat="imgs in images">
+				<div  >
+				<a ng-click="openLightboxModal($index)"><img class="main" ng-src="{{imgs.url_s}}" /></a>
+				<div class="imgInfo">
+					<img class="avatar" ng-src="{{imgs.url_s}}">Title{{imgs.title}}				
+				</div>
+				</div>
+			</div>
+			</div>						
+		</div>		
+</div>
